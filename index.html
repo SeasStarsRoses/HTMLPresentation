@@ -1,17 +1,24 @@
 <!doctype html>
-<html>
+<html lang="en">
+
 	<head>
 		<meta charset="utf-8">
+
+		<title>HTML</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
-
-		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
 
 		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+		<link rel="stylesheet" href="lib/css/zenburn.css">
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -21,29 +28,183 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
 
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h2>
+						<font color="red">H</font>
+						<font color="magenda">T</font>
+						<font color="green">M</font>
+						<font color="yellow">L</font><br><br>
+						<font color="blue">Peter Heide</font><br>
+						<font color="black">pheide@t-online.de</font>
+					</h2>
+				</section>
+
+				<section>
+					<h2>Table of contents</h2>
+					<ol>
+						<li><a href="#/2">HTML Training</a></li>
+						<li><a href="#/3">What is HTML?</a></li>
+						<li><a href="#/4">Tutorials</a></li>
+						<li><a href="#/5">Free Editors</a></li>
+
+					</ol>
+				</section>
+
+
+			<section data-markdown>
+				<script type="text/template">
+				## HTML Training
+				pheide@t-online.de
+				```
+				<!DOCTYPE html>
+				<html>
+					<head>
+						<title>HTML Training</title>
+						<meta name="author" content="Pupils">
+					</head>
+					<body>
+						<p>Hello World!</p>
+					</body>	  	
+				</html	
+				```
+				</script>
+			</section>
+
+			<section>
+				<h2>What is HTML?</h2>
+				<ol>
+					<li>Describes the structure and contents of a document</li>
+					<li>Offers tags like headings, lists, tables, ...</li>
+					<li>The document can be rendered in a browser for viewing</li>
+				</ol>
+			</section>
+
+			<section>
+				<h2>Advantages</h2>
+				<ol>
+					<li>Easy to learn</li>
+					<li>Can be written with a simple text editor</li>
+					<li>Running with all platforms, operating systems, browsers</li>
+				</ol>
+		</section>
+
+			<section>
+				<h2>Disadvantages</h2>
+				<ol>
+					<li>The view depends on the browser</li>
+					<li>It is not always possible to predict the layout</li>
+					<li>It is hard for web designers to use a fixed layout</li>
+				</ol>
+			</section>
+
+
+<section>
+			<section id="fragments">
+				<h2>Fragments</h2>
+				<p>Hit the next arrow...</p>
+				<p class="fragment">... to step through ...</p>
+				<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
+
+				<aside class="notes">
+					This slide has fragments which are also stepped through in the notes window.
+				</aside>
+			</section>
+				<section>
+					<h2>Fragment Styles</h2>
+				<p>There's different types of fragments, like:</p>
+						<p class="fragment grow">grow</p>
+						<p class="fragment shrink">shrink</p>
+						<p class="fragment fade-out">fade-out</p>
+						<p class="fragment fade-up">fade-up (also down, left and right!)</p>
+						<p class="fragment current-visible">current-visible</p>
+						<p>Highlight <span class="fragment highlight-red">red</span> <span class="fragment highlight-blue">blue</span> <span class="fragment highlight-green">green</span></p>
+					</section>
+				</section>
+
+
+
+			<section>
+				<h2>Tutorials</h2>
+				<h3>
+					W3Schools
+				</h3><br>
+				<h3>
+					Selfhtml	
+				</h3><br>
+			</section>
+
+			<section>
+				<h2>Free Editors</h2>
+				<h3>
+					Microsoft Visual Studio code
+				</h3><br>
+				<h3>
+					IntelliJ Idea Community Edition
+				</h3><br>
+				<h3>
+					VIM (VI Improved)
+				</h3>
+				<p>
+					Launch in shell: <code>vim</code><br>
+					Launch tutorial: <code>vimtutor</code>
+				</p>
+			</section>
+
+			<section>
+				<h3><font color="yellow">&#x1f60a;<font></h3>
+				<h3>The End</h3>			
+				<h3>Time to say goodbye</h3>
+				<h3>Editors: MS Visual Studio Code and VIM (Start with vimtutor)</h3>
+
+				<!-- For the W3C clock see: https://www.w3schools.com/graphics/canvas_clock_start.asp -->
+				<canvas id="canvas" width="400" height="400">
+				</canvas>
+			</section>
+			<!-- For the W3C clock see: https://www.w3schools.com/graphics/canvas_clock_start.asp -->
+			<script src="lib/js/clock.js"></script>
+
+			</div>
+
+		</div>
+		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
 
 		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
+
+			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true }
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
 				]
 			});
+
 		</script>
+
 	</body>
 </html>
